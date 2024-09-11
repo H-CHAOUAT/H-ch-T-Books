@@ -9,7 +9,7 @@ public class Book {
     private String publishYear;
     private String genre;
     private String description;
-    private int price;
+    private Double price;
 
     //create getters & setters
 
@@ -61,11 +61,11 @@ public class Book {
         this.genre = genre;
     }
 
-    public int getPrice() {
+    public Double getPrice() {
         return price;
     }
 
-    public void setPrice(int price) {
+    public void setPrice(Double price) {
         this.price = price;
     }
 
@@ -80,7 +80,7 @@ public class Book {
     int quantity;
 
     // create constructor
-    public Book(int id, String author, String title, String publishYear, String genre, int price, String description, int quantity) {
+    public Book(int id, String author, String title, String publishYear, String genre, Double price, String description, int quantity) {
         this.id = id;
         this.author = author;
         this.title = title;
