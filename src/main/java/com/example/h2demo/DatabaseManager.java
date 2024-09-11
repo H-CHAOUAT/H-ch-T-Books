@@ -1,7 +1,6 @@
 package com.example.h2demo;
 import java.sql.Connection;
 import java.sql.DriverManager;
-import java.sql.ResultSet;
 import java.sql.Statement;
 
 public class DatabaseManager {
@@ -66,7 +65,7 @@ public class DatabaseManager {
         try {
             String insertBookSQL = "INSERT INTO books (id, title, author, publishYear, genre, description, price, quantity) VALUES (" +
                     book.getId() + ", '" + book.getTitle() + "', '" + book.getAuthor() + "', '" +
-                    book.getPublisherYear() + "', '" + book.getGenre() + "', '" + book.getDescription() + "', " +
+                    book.getPublishYear() + "', '" + book.getGenre() + "', '" + book.getDescription() + "', " +
                     book.getPrice() + ", " + book.getQuantity() + ")";
             statement.execute(insertBookSQL);
         } catch (Exception e) {
@@ -78,7 +77,7 @@ public class DatabaseManager {
     public void insertUser(User user) {
         try {
             String insertUserSQL = "INSERT INTO users (id, name, userName, email, passwordHash, address, phone) VALUES (" +
-                    user.getUserId() + ", '" + user.getName() + "', '" + user.getUserName() + "', '" +
+                    user.getId() + ", '" + user.getName() + "', '" + user.getUserName() + "', '" +
                     user.getEmail() + "', '" + user.getPasswordHash() + "', '" +
                     user.getAddress() + "', '" + user.getPhone() + "')";
             statement.execute(insertUserSQL);

@@ -1,6 +1,6 @@
 package com.example.h2demo;
 
-public class Books {
+public class Book {
     // create instance variables
 
     private int id;
@@ -11,7 +11,7 @@ public class Books {
     private String description;
     private int price;
 
-    //getters & setters
+    //create getters & setters
 
     public int getId() {
         return id;
@@ -79,7 +79,8 @@ public class Books {
 
     int quantity;
 
-    public Books(int id, String author, String title, String publishYear, String genre, int price, String description, int quantity) {
+    // create constructor
+    public Book(int id, String author, String title, String publishYear, String genre, int price, String description, int quantity) {
         this.id = id;
         this.author = author;
         this.title = title;
@@ -90,7 +91,7 @@ public class Books {
         this.quantity = quantity;
 
     }
-
+    // to visualise
     @Override
     public String toString() {
         return "Books{" +
