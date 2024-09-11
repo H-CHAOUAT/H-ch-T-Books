@@ -2,13 +2,16 @@ package com.example.h2demo;
 
 public class Books {
     // create instance variables
-    int id;
-    String title;
-    String author;
-    String publishYear;
-    String genre;
-    String description;
-    int price;
+
+    private int id;
+    private String title;
+    private String author;
+    private String publishYear;
+    private String genre;
+    private String description;
+    private int price;
+
+    //getters & setters
 
     public int getId() {
         return id;
@@ -85,6 +88,7 @@ public class Books {
         this.price = price;
         this.description = description;
         this.quantity = quantity;
+
     }
 }
 
