@@ -3,6 +3,10 @@ package com.example.h2demo;
 public class Main {
     public static void main(String[] args) {
 
+        dataBaseManager();
+    }
+
+    private static void dataBaseManager() {
         // create an object
         DatabaseManager databaseManager = new DatabaseManager();
 
